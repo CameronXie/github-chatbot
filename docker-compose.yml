@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  python:
+    container_name: bot_python
+    build:
+      context: docker/python
+      target: develop
+    volumes:
+      - './:/var/bot'
+    working_dir: '/var/bot'
+    env_file:
+      - .env
+    command: [ '/bin/sh', '-c', 'tail -f /dev/null' ]
+    restart: always

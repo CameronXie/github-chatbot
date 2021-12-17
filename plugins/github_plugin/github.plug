@@ -1,0 +1,9 @@
+[Core]
+Name = GithubPlugin
+Module = github_plugin
+
+[Documentation]
+Description = GitHub Plugin
+
+[Python]
+Version = 3
